@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gökbörü Launcher | Resmi Sayfa</title>
+    <title>Gökbörü Arşivi | Tüm Uygulamalar</title>
     <style>
-        body { background: #0a0a0a; color: #e0e0e0; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; text-align: center; margin: 0; padding: 0; }
-        .container { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: radial-gradient(circle, #1a1a2e 0%, #0a0a0a 100%); }
-        h1 { color: #00d4ff; font-size: 3rem; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 10px; text-shadow: 0 0 20px #00d4ff; }
-        p { font-size: 1.2rem; color: #888; margin-bottom: 30px; }
-        .download-btn { background: #00d4ff; color: #0a0a0a; padding: 15px 40px; font-size: 1.5rem; font-weight: bold; text-decoration: none; border-radius: 50px; transition: 0.3s; box-shadow: 0 0 15px rgba(0, 212, 255, 0.5); }
-        .download-btn:hover { background: #fff; transform: scale(1.1); box-shadow: 0 0 30px #00d4ff; }
-        .footer { position: absolute; bottom: 20px; font-size: 0.8rem; color: #444; }
+        body { background: #0a0a0a; color: #e0e0e0; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding-top: 50px; }
+        h1 { color: #00d4ff; font-size: 2.5rem; text-shadow: 0 0 15px #00d4ff; text-transform: uppercase; }
+        .app-card { background: #16213e; border: 2px solid #0f3460; border-radius: 15px; padding: 20px; width: 250px; transition: 0.3s; }
+        .app-card:hover { transform: translateY(-10px); border-color: #00d4ff; box-shadow: 0 0 20px rgba(0, 212, 255, 0.4); }
+        .app-card h2 { color: #fff; font-size: 1.5rem; margin-bottom: 10px; }
+        .app-card p { color: #888; font-size: 0.9rem; margin-bottom: 20px; }
+        .download-btn { background: #00d4ff; color: #0a0a0a; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; }
+        .footer { margin-top: 50px; color: #444; font-size: 0.8rem; }
     </style>
 </head>
 <body>
+    <h1>GÖKBÖRÜ ARŞİVİ</h1>
+    <p>Tüm Gökbörü araçları tek bir noktada.</p>
+    
     <div class="container">
-        <h1>GÖKBÖRÜ</h1>
-        <p>Yeni Nesil Launcher Deneyimi Çok Yakında</p>
-        <a href="#" class="download-btn">DOSYAYI İNDİR</a>
-        <div class="footer">© 2026 Gökbörü Team - Tüm Hakları Saklıdır.</div>
+        <div class="app-card">
+            <h2>Launcher</h2>
+            <p>Sisteme giriş için ana uygulama.</p>
+            <a href="#" class="download-btn">İNDİR</a>
+        </div>
+
+        <div class="app-card">
+            <h2>Gökbörü Tool</h2>
+            <p>Sistem optimizasyon aracı.</p>
+            <a href="#" class="download-btn">İNDİR</a>
+        </div>
+
+        <div class="app-card">
+            <h2>Özel Config</h2>
+            <p>En iyi performans ayarları.</p>
+            <a href="#" class="download-btn">İNDİR</a>
+        </div>
     </div>
+
+    <div class="footer">© 2026 Gökbörü Team</div>
 </body>
 </html>
